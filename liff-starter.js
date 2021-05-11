@@ -16,7 +16,6 @@ function initializeApp(data) {
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             // url: 'https://line.me'
-            // url : 'https://nao-liff-test.herokuapp.com/src/test1.html'
             url : 'https://nao-liff-test.herokuapp.com/src/test1.html',
             external: false
         });
