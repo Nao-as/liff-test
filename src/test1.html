@@ -1,13 +1,16 @@
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIFF Starter</title>
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
-  <h1>hello</h1>
+  <h1>testページ</h1>
 
   <div class="swiper-container">
     <!-- Additional required wrapper -->
@@ -45,17 +48,31 @@
     <a href="https://nao-liff-test.herokuapp.com/src/faq.html">FAQ</a>
   </nav>
   <!-- jsで組み立てる -->
-
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+ 
+  <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+  <script src="../liff-starter.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    let mySwiper = new Swiper(".swiper-container", {
+    const swiper = new Swiper(".swiper-container", {
+      // Optional parameters
+      // direction: "vertical",
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
       navigation: {
-        //ナビゲーションのオプション（矢印ボタンの要素を指定）
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
     });
   </script>
-  <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-  <script src="../liff-starter.js"></script>
 </body>

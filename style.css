@@ -20,19 +20,22 @@ table {
 }
 
 nav{
-    border : solid 1px #333;
+    /* border : solid 1px #333; */
     display: flex;
+    justify-content: space-around;
     position: fixed;
     z-index: 10;
     bottom:0;
     border-top : 1px solid rgb(101, 101, 101);
     width : 100%;
+    background-color: aliceblue;
 }
 nav a{
     display: inline-block;
     text-align: center;
     padding : 10px;
     text-decoration: none;
+    color: rgb(211, 152, 24);
 }
 #profilepicturediv {
     text-align: center;
@@ -63,4 +66,9 @@ img {
 button {
     margin: 4px;
     padding : 4px 8px;
+}
+
+
+.faq__container{
+    margin:10px;
 }
