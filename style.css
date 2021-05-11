@@ -72,3 +72,9 @@ button {
 .faq__container{
     margin:10px;
 }
+
+.faq__container summary{
+    padding: 4px 8px;
+    background-color: azure;
+    margin-bottom : 8px;
+}
