@@ -17,8 +17,8 @@ function initializeApp(data) {
         liff.openWindow({
             // url: 'https://line.me'
             // url : 'https://nao-liff-test.herokuapp.com/src/test1.html'
-            url : 'https://nao-liff-test.herokuapp.com/src/test1.html'
-
+            url : 'https://nao-liff-test.herokuapp.com/src/test1.html',
+            external: false
         });
     });
 
