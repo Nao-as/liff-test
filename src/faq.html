@@ -1,5 +1,5 @@
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>よくある質問</title>
   <link rel="stylesheet" href="../style.css" />
@@ -62,7 +62,6 @@
       <p>詳細コンテンツ</p>
     </details>
   </div>
-  
 
   <nav>
     <a href="https://nao-liff-test.herokuapp.com/">home</a>
@@ -72,4 +71,19 @@
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="../liff-starter.js"></script>
+
+  <script>
+    liff.sendMessages([
+      {
+        type: "text",
+        text: "You've successfully sent a message! Hooray!",
+      },
+    ])
+    .then(function () {
+      window.alert("Message sent");
+    })
+    .catch(function (error) {
+      window.alert("Error sending message: " + error);
+    });
+  </script>
 </body>
