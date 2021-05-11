@@ -75,18 +75,13 @@
   <script>  
   // window.onload = function (e) {
     alert("ok");
-    
-    liff.sendMessages([
-      {
-        type: "text",
-        text: "You've successfully sent a message! Hooray!",
-      },
-    ])
-    .then(function () {
-      window.alert("Message sent");
+    liff.getProfile()
+    .then(profile => {
+      const name = profile.displayName;
+      alert(name);
     })
-    .catch(function (error) {
-      window.alert("Error sending message: " + error);
+    .catch((err) => {
+      console.log('error', err);
     });
   // };
   </script>
