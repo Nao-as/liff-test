@@ -1,7 +1,7 @@
 # LIFF Starter App
 
 This is a small web application that demonstrates the basic functionality of the [LINE Front-end Framework (LIFF)](https://developers.line.me/en/docs/liff/overview/). 
-
+ 
 ## Prerequisites
 * [A channel on the LINE Developers Console](https://developers.line.me/en/docs/liff/getting-started/) for your application.
 * [A channel access token](https://developers.line.me/en/docs/liff/getting-started/#preparing-channel-access-token)
