@@ -23,6 +23,7 @@ nav{
     border : solid 1px #333;
     display: flex;
     position: fixed;
+    z-index: 10;
     bottom:0;
     border-top : 1px solid rgb(101, 101, 101);
     width : 100%;
