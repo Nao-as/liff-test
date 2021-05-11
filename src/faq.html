@@ -72,7 +72,8 @@
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="../liff-starter.js"></script>
 
-  <script>
+  <script>  
+  window.onload = function (e) {
     liff.sendMessages([
       {
         type: "text",
@@ -85,5 +86,6 @@
     .catch(function (error) {
       window.alert("Error sending message: " + error);
     });
+  };
   </script>
 </body>
