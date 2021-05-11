@@ -3,6 +3,9 @@ html {
     font-size: 11px;
 }
  
+body{
+    background-color: rgb(218, 254, 254);
+}
 table {
     width: 100%;
     table-layout:fixed;
