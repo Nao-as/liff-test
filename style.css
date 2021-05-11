@@ -1,80 +1,107 @@
-
 html {
-    /* font-size: 11px; */
+  /* font-size: 11px; */
 }
- 
-body{
-    background-color: rgb(218, 254, 254);
-    margin:0;
 
+body {
+  background-color: #d5d5d5;
+  margin: 0;
 }
 table {
-    width: 100%;
-    table-layout:fixed;
-    word-break: break-all;
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-all;
 }
 
 .div {
-    max-width: 100%;
-    text-align: center;
+  max-width: 100%;
+  text-align: center;
 }
 
-nav{
-    /* border : solid 1px #333; */
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 10;
-    bottom:0;
-    border-top : 1px solid rgb(101, 101, 101);
-    width : 100%;
-    background-color: aliceblue;
+nav {
+  /* border : solid 1px #333; */
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  border-top: 1px solid rgb(101, 101, 101);
+  width: 100%;
+  background-color: aliceblue;
 }
-nav a{
-    display: inline-block;
-    text-align: center;
-    padding : 10px;
-    text-decoration: none;
-    color: rgb(211, 152, 24);
+nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(211, 152, 24);
 }
 #profilepicturediv {
-    text-align: center;
+  text-align: center;
 }
 
-img { 
-    max-width: 25%; 
-    height: auto; 
+img {
+  max-width: 25%;
+  height: auto;
 }
 
 #profileimagediv {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 #contextinfo {
-    display: none;
+  display: none;
 }
 
-#accesstokendata, #profileinfo {
-    display: none;
+#accesstokendata,
+#profileinfo {
+  display: none;
 }
 
 .buttongroup {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    margin: 4px;
-    padding : 4px 8px;
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+.faq__container {
+  margin: 10px;
+}
+
+.faq__container summary {
+  padding: 4px 8px;
+  background-color: azure;
+  margin-bottom: 8px;
+}
+
+.access_info{
+    padding: 4px;
+    list-style-type: none;
+}
+
+.access_info li{
+    border-top: 1px solid rgb(164, 164, 164);
+    padding: 4px;
+    margin-bottom: 4px;
+}
+.g__map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.g__map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 
-.faq__container{
-    margin:10px;
-}
-
-.faq__container summary{
-    padding: 4px 8px;
-    background-color: azure;
-    margin-bottom : 8px;
+section{
+    background-color: #fafafa;
 }
