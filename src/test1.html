@@ -24,7 +24,11 @@
   </div> -->
   <!-- Swiper -->
 
-  <section></section>
+  <section>
+
+
+
+  </section>
 
   <section>
     ショップ情報
@@ -64,15 +68,21 @@
   <script src="../liff-starter.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper(".swiper-container", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+    // const swiper = new Swiper(".swiper-container", {
+    //   loop: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //   },
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+      if(liff.isInClient() ){
+        word ="liff内ブラウザ";
+      }else{
+        word ="外部ブラウザ";
+      }
+      alert(word);
   </script>
 </body>

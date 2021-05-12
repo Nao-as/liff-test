@@ -12,7 +12,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-    // openWindow call
+    // openWindow call (LINE内 | 外部 ブラウザを開く)
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             // url: 'https://line.me'
@@ -85,3 +85,6 @@ function toggleElement(elementId) {
         elem.style.display = "block";
     }
 }
+
+
+//liff.isInClient()
