@@ -14,7 +14,7 @@
     <div class="buttonrow">
       <button id="getaccesstoken">Get Access Token</button>
       <button id="getprofilebutton">Get Profile</button>
-      <button id="sendmessagebutton">liff.isInClient()判定</button>
+      <button id="isInClient">liff.isInClient()判定</button>
     </div>
   </div>
 
@@ -78,16 +78,24 @@
       </tr>
     </table>
   </div>
-
+  
   <nav>
-    <a href="https://nao-liff-test.herokuapp.com/">home</a>
-    <a href="https://nao-liff-test.herokuapp.com/src/test1.html">test</a>
-    <a href="https://nao-liff-test.herokuapp.com/src/faq.html">FAQ</a>
-    <a href="https://nao-liff-test.herokuapp.com/src/send.html">Send</a>
+    <a href="/">home</a>
+    <a href="/src/test1.html">test</a>
+    <a href="/src/faq.html">FAQ</a>
+    <a href="/src/send.html">Send</a>
   </nav>
 
-  <!-- jsで組み立てる -->
+  <!-- vconsoleを読み取る -->
+  <script src="src/module/vconsole.min.js"></script>
+  <script>
+    //vconsole初期化
+    var vConsole = new VConsole();
+    console.log('vConsole init');
+  </script>
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="liff-starter.js"></script>
+
+
 </body>

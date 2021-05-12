@@ -34,7 +34,7 @@ function initializeApp(data) {
     });
 
     // sendMessages call
-    document.getElementById('sendmessagebutton').addEventListener('click', function () {
+    document.getElementById('isInClient').addEventListener('click', function () {
         if(liff.isInClient()){
             word ="liff内ブラウザです";
         }else{
