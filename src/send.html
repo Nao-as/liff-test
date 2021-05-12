@@ -23,10 +23,11 @@
     <script>  
     document.getElementById('sendMsgBtn').addEventListener('click', function () {
         let wo = document.getElementsByName('word');
-        alert(wo.value);
+        // alert(wo.value);
+        console.log(wo[0].value);
         liff.sendMessages([{
             type: 'text',
-            text: wo
+            text: wo[0].value
         }]).then(function () {
             // window.alert("Message sent");
             console.log('message sent');
