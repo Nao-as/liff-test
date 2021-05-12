@@ -2,6 +2,13 @@ window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
     });
+
+    if(liff.isInClient()){
+        word ="liff内ブラウザ";
+      }else{
+        word ="外部ブラウザ";
+      }
+      alert(word);
 };
  
 function initializeApp(data) {
