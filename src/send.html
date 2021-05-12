@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>送信テスト</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  
+  <body>
+    <h1>hello</h1>
+
+    <input type="text" name="word">
+    <button id="sendMsgBtn">送信</button>
+  
+    <nav>
+      <a href="https://nao-liff-test.herokuapp.com/">home</a>
+      <a href="https://nao-liff-test.herokuapp.com/src/test1.html">test</a>
+      <a href="https://nao-liff-test.herokuapp.com/src/faq.html">FAQ</a>
+      <a href="">Send</a>
+    </nav>
+  
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+  
+    <script>  
+    document.getElementById('sendMsgBtn').addEventListener('click', function () {
+        let wo = document.getElementsByName('word');
+        alert(wo.value);
+        liff.sendMessages([{
+            type: 'text',
+            text: wo
+        }]).then(function () {
+            // window.alert("Message sent");
+            console.log('message sent');
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    });
+    
+      
+    </script>
+  </body>
+  
