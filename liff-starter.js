@@ -19,7 +19,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-    console.log(liff.getOS());
+    console.log(liff.getOS()); 
     // openWindow call (LINE内 | 外部 ブラウザを開く)
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
