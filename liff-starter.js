@@ -19,7 +19,6 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-    console.log(liff.getOS()); 
     // openWindow call (LINE内 | 外部 ブラウザを開く)
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
@@ -36,12 +35,13 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('isInClient').addEventListener('click', function () {
-        if(liff.isInClient()){
-            word ="liff内ブラウザです";
-        }else{
-            word ="外部ブラウザです";
-        }
-        alert(word);
+        alert(liff.getOS()); 
+        // if(liff.isInClient()){
+        //     word ="liff内ブラウザです";
+        // }else{
+        //     word ="外部ブラウザです";
+        // }
+        // alert(word);
     });
 
     // get access token
