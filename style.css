@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #d5d5d5;
+  background-color: #fafafa;
   margin: 0;
 }
 table {
@@ -12,13 +12,12 @@ table {
   word-break: break-all;
 }
 
-.div {
-  max-width: 100%;
-  text-align: center;
-}
 
+h1,h2{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 nav {
-  /* border : solid 1px #333; */
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -67,16 +66,75 @@ button {
   padding: 4px 8px;
 }
 
+
+/* faq */
 .faq__container {
   margin: 10px;
 }
 
-.faq__container summary {
-  padding: 4px 8px;
-  background-color: azure;
+.faq__container details {
   margin-bottom: 8px;
+
 }
 
+.faq__container summary {
+  padding: 8px 20px;
+  background-color: rgb(175, 254, 254);
+  border-radius: 8px;
+  position: relative;
+  display: block; /* 矢印を消す */
+  padding-left: 20px; /* アイコン分の余白 */
+  cursor: pointer;
+}
+
+.faq__container p {
+  margin-block-start: 0;
+  padding: 8px 8px 12px;
+  background-color: rgb(220, 255, 255);
+  border-radius: 8px;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* 矢印を消す */
+}
+/* 疑似要素でアイコンを表示 */
+summary:before,
+summary:after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+summary:before {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #767777;
+}
+summary:after {
+  left: 6px;
+  width: 5px;
+  height: 5px;
+  border: 4px solid transparent;
+  border-left: 5px solid #fff;
+  box-sizing: border-box;
+  transition: .5s;
+
+}
+/* オープン時 */
+details[open] summary:after {
+  transform: rotate(90deg); /* 90度回転 */
+  left: 4px;
+  top: 5px;
+  transition: .5s;
+}
+
+
+
+
+/* access */
 .access_info{
     padding: 4px;
     list-style-type: none;
